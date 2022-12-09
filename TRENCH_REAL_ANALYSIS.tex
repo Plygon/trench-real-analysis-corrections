@@ -24107,7 +24107,7 @@ $$
  and
  define
 $$
-M=\left(\sum_{i=1}^n\sum_{j=1}^m\left(\frac{\partial g_i(\mathbf{U}_0}
+M=\left(\sum_{i=1}^n\sum_{j=1}^m\left(\frac{\partial g_i(\mathbf{U}_0)}
 {\partial u_j}\right)^2\right)^{1/2}.
 $$
 Then$,$ if $\epsilon>0,$ there is a $\delta>0$ such that
@@ -24125,10 +24125,10 @@ Lemma~\ref{thmtype:5.3.8} to $g_i$ shows that
 \begin{equation} \label{eq:5.4.1}
 \begin{array}{rcl}
 g_i(\mathbf{U})-g_i(\mathbf{U}_0)\ar=(d_{\mathbf{U}_0}g_i)(\mathbf{U}-\mathbf{U}_0)+
-E_i (\mathbf{U}) |(\mathbf{U}-\mathbf{U}_0|\\[2\jot]
+E_i (\mathbf{U}) |\mathbf{U}-\mathbf{U}_0|\\[2\jot]
 \ar=\dst\sum_{j=1}^m\frac{\partial g_i(\mathbf{U}_0)}{\partial
 u_j}(u_j-u_{j0})+
-E_i (\mathbf{U}) |(\mathbf{U}-\mathbf{U}_0|,
+E_i (\mathbf{U}) |\mathbf{U}-\mathbf{U}_0|,
 \end{array}
 \end{equation}
 \newpage
@@ -24226,7 +24226,7 @@ h(\mathbf{U})-h(\mathbf{U}_0)\ar=\dst{\sum_{i=1}^n} f_{x_i}(\mathbf{X}_0)
 f_{x_i}(\mathbf{X}_0)E_i(\mathbf{U})\right)} |\mathbf{U}-\mathbf{U}_0|
 \\\\
 \ar{}+E(\mathbf{G}(\mathbf{U}))
-|\mathbf{G}(\mathbf{U})-\mathbf{G}(\mathbf{U}_{0}|.
+|\mathbf{G}(\mathbf{U})-\mathbf{G}(\mathbf{U}_0)|.
 \end{array}
 $$
 Since
@@ -24235,8 +24235,8 @@ $$
 $$
 \eqref{eq:5.4.2} and Lemma~\ref{thmtype:5.4.2}  imply that
 $$
-\frac{h(\mathbf{U})-h(\mathbf{U}_0)-\dst\sum_{i=1}^nf_{x_i}(\mathbf{X}_{0}
-d_{\mathbf{U}_0}g_i
+\frac{h(\mathbf{U})-h(\mathbf{U}_0)-\dst\sum_{i=1}^nf_{x_i}(\mathbf{X}_0)
+(d_{\mathbf{U}_0}g_i)
 (\mathbf{U}-\mathbf{U}_0)}{|\mathbf{U}-\mathbf{U}_0|}=0.
 $$
 Therefore, $h$ is differentiable at $\mathbf{U}_0$, and $d_{\mathbf{U}_0}h$
@@ -24510,8 +24510,8 @@ $$
 $$
 which really stands here for
 \begin{equation} \label{eq:5.4.17}
-\frac{\partial}{\partial u_k}\left
-(\frac{\partial f(\mathbf{X}(\mathbf{U}))}{
+\frac{\partial}{\partial u_k}
+\left(\frac{\partial f(\mathbf{X}(\mathbf{U}))}{
 \partial x_j}\right).
 \end{equation}
 The safest procedure is to write temporarily
