@@ -24754,7 +24754,7 @@ f(\mathbf{X}(t))
 (x_{i_1}-x_{i_1,0})(x_{i_2}-x_{i_2,0})\cdots(x_{i_r}-x_{i_r,0})
 \end{equation}
 if all partial derivatives of $f$ of order $\le r-1$ are differentiable in
-$B_\rho(\mathbf{X_0})$.
+$B_\rho(\mathbf{X}_0)$.
 
 This motivates the following definition.
 
@@ -25117,7 +25117,7 @@ extreme point. It is related to Theorem~\ref{thmtype:2.5.3}.
 Suppose that  $f$ satisfies the hypotheses of Theorem~$\ref{thmtype:5.4.9}$
 with $k\ge2,$ and
  \begin{equation} \label{eq:5.4.38}
-d^{(r)}_{\mathbf{X}_0} f\equiv0\quad (1\le r\le k-1),\quad d^{(k)}_\mathbf{X_0}
+d^{(r)}_{\mathbf{X}_0} f\equiv0\quad (1\le r\le k-1),\quad d^{(k)}_\mathbf{X}_0
 f\not\equiv0.
 \end{equation}
 Then
@@ -25167,7 +25167,7 @@ To prove \part{a}, suppose that
 $d^{(k)}_{\mathbf{X}_0}f$ is not semidefinite. Then there are vectors $\mathbf{U}_1$ and
 $\mathbf{U}_2$ such that
 $$
-(d^{(k)}_{\mathbf{X}_0} f)(\mathbf{U}_1)>0\mbox{\quad and\quad} (d^{(k)}_\mathbf{X_0}f)(\mathbf{U}_2)<0.
+(d^{(k)}_{\mathbf{X}_0} f)(\mathbf{U}_1)>0\mbox{\quad and\quad} (d^{(k)}_\mathbf{X}_0f)(\mathbf{U}_2)<0.
 $$
 This and \eqref{eq:5.4.40} imply that
 $$
@@ -30639,14 +30639,14 @@ $$
 The values of these Jacobians at $\mathbf{X}_0=(-1,1,0)$ are
 $$
 \frac{\partial(f_1,f_2)
-}{\partial(x,y)}\Bigg|_\mathbf{X_0}=\left|\begin{array}{rr}-4&-2\\-6&
+}{\partial(x,y)}\Bigg|_\mathbf{X}_0=\left|\begin{array}{rr}-4&-2\\-6&
 -4\end{array}\right|=4,\quad
-\frac{\partial(f_1,f_2)}{\partial(y,z)}\Bigg|_\mathbf{X_0}=
+\frac{\partial(f_1,f_2)}{\partial(y,z)}\Bigg|_\mathbf{X}_0=
 \left|\begin{array}{rr}-2&0\\-4&0\end{array}\right|=0,
 $$
 and
 $$
-\frac{\partial(f_1,f_2)}{\partial(z,x)}\Bigg|_\mathbf{X_0}=\left|\begin{array}{rr}
+\frac{\partial(f_1,f_2)}{\partial(z,x)}\Bigg|_\mathbf{X}_0=\left|\begin{array}{rr}
 0&-4\\ 0&-6\end{array}\right|=0.
 \eqno{\bbox}
 $$
@@ -30944,7 +30944,7 @@ $\mathbf{F}$ is continuously differentiable on $\R^{n+m}$,
 $\mathbf{F}(\mathbf{X}_0,\mathbf{U}_0)=\mathbf{0}$,
 $\mathbf{F}_\mathbf{U}(\mathbf{X}_0,\mathbf{U}_0)$ is singular, and
 the conditions $\mathbf{F}(\mathbf{X},\mathbf{U})=\mathbf{0}$ and
-$\mathbf{U}(\mathbf{X}_0)=\mathbf{Y_0}$
+$\mathbf{U}(\mathbf{X}_0)=\mathbf{Y}_0$
 \begin{alist}
 \item % (a)
  determine $\mathbf{U}$ as a continuously differentiable
@@ -31060,7 +31060,7 @@ differentiable
 in a neighborhood of $\mathbf{P}_0=(x_0,y_0,z_0,u_0,v_0)$,
 $\mathbf{F}(\mathbf{P}_0)=\mathbf{0}$, and
 $$
-\frac{\partial(f,g,h)}{\partial(y,z,u)}\bigg|_\mathbf{P_0}\ne0.
+\frac{\partial(f,g,h)}{\partial(y,z,u)}\bigg|_\mathbf{P}_0\ne0.
 $$
 Then Theorem~\ref{thmtype:6.4.1} implies that the conditions
 $$
@@ -33383,7 +33383,7 @@ so
 \end{equation}
 is a typical Riemann sum of $F_p$ over $\mathbf{Q}$.   Since
 \begin{eqnarray*}
-F_p(\mathbf{Y_j})\ar=\int_{\widehat R}
+F_p(\mathbf{Y}_j)\ar=\int_{\widehat R}
 f(x_1,x_2,
 \dots,x_p,\mathbf{Y}_j)\,d(x_1,x_2, \dots,x_p)\\
 \ar=\sum_{j=1}^k\int_{\widehat R_j} f(x_1,x_2, \dots,x_p,\mathbf{Y}_j)\,d(x_1,x_2,
@@ -33403,7 +33403,7 @@ M_{ij}\ar=\sup\set{f(x_1,x_2, \dots,x_p,\mathbf{Y})}
  \noindent
 then
 $$
-\sum_{i=1}^k m_{ij}V(\widehat R_i)\le F_p(\mathbf{Y_j})\le\sum_{i=1}^k M_{ij}
+\sum_{i=1}^k m_{ij}V(\widehat R_i)\le F_p(\mathbf{Y}_j)\le\sum_{i=1}^k M_{ij}
 V(\widehat R_i).
 $$
 Multiplying this by $V(T_j)$ and summing from $j=1$ to $j=s$
@@ -35109,7 +35109,7 @@ V(\mathbf{G}(R_j))\approx V(\mathbf{A}(R_j)).
 \end{equation}
   We can think of the affine transformation $\mathbf{A}$
 as a composition  $\mathbf{A}=
-\mathbf{A}_3\circ\mathbf{A}_2\circ\mathbf{A_1}$, where
+\mathbf{A}_3\circ\mathbf{A}_2\circ\mathbf{A}_1$, where
 \begin{eqnarray*}
 \mathbf{A}_1(\mathbf{Y})\ar=\mathbf{Y}-\mathbf{Y}_j,\\
 \mathbf{A}_2(\mathbf{Y})\ar=\mathbf{G}'(\mathbf{Y}_j)\mathbf{Y},\\
@@ -35121,7 +35121,7 @@ to a different location, $R_j'$ is also a rectangle, and
 \begin{equation} \label{eq:7.3.25}
 V(R_j')=V(R_j).
 \end{equation}
-Now let $R_j''=\mathbf{A_2}(R_j')$. (In general, $R_j''$ is not a
+Now let $R_j''=\mathbf{A}_2(R_j')$. (In general, $R_j''$ is not a
 rectangle.) Since $\mathbf{A}_2$  is the linear transformation
 with nonsingular matrix $\mathbf{G}'(\mathbf{Y}_j)$, Theorem~\ref{thmtype:7.3.7}
 implies that
@@ -35130,7 +35130,7 @@ V(R_j''))=
 |\det\mathbf{G}'(\mathbf{Y}_j)|V(R_j')=|J\mathbf{G}(\mathbf{Y}_j)|V(R_j),
 \end{equation}
 where $J\mathbf{G}$ is the Jacobian of $\mathbf{G}$.
-Now let $R_j'''=\mathbf{A_3}(R_j'')$. Since $\mathbf{A}_3$
+Now let $R_j'''=\mathbf{A}_3(R_j'')$. Since $\mathbf{A}_3$
 merely shifts all points in the same way,
 \begin{equation} \label{eq:7.3.27}
 V(R_j''')=V(R_j'').
@@ -37538,7 +37538,7 @@ where $\mathbf{E}_i$ is the vector with $i$th component equal to $1$
 and all other components equal to $0$. From
 Definition~\ref{thmtype:8.1.3}\part{b}, \part{c}, and induction,
 $$
-N(\mathbf{X}-\mathbf{Y})\le\sum_{i=1}^n|x_i-y_i|N(\mathbf{E_i});
+N(\mathbf{X}-\mathbf{Y})\le\sum_{i=1}^n|x_i-y_i|N(\mathbf{E}_i);
 $$
 therefore, by Schwarz's inequality,
 \begin{equation} \label{eq:8.1.21}
@@ -37546,7 +37546,7 @@ N(\mathbf{X}-\mathbf{Y})\le K\|\mathbf{X}-\mathbf{Y}\|_2,
 \end{equation}
 where
 $$
-K=\left(\sum_{i=1}^nN^2(\mathbf{E_i})\right)^{1/2}.
+K=\left(\sum_{i=1}^nN^2(\mathbf{E}_i)\right)^{1/2}.
 $$
 From \eqref{eq:8.1.21} and Theorem~\ref{thmtype:8.1.5},
 $$
