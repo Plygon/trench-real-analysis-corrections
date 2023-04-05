@@ -22,6 +22,29 @@
 
 \item Exercise 5.4.7 is unrelated to the topic of the section, and would fit better in section 3.3.
 
+\item {
+    Exercise 6.2.15 asks you to prove a weaker statement than what is actually the case, so I suspect there may be an error. Not only is it true that $\mathbf{G}_1 = \mathbf{G}_2$,
+    but the functions must also be constants.
+
+    Proof: Start by granting the fact that we are asked to prove:
+    \begin{equation*}
+        \mathbf{G}_1(\mathbf{X}) = \mathbf{G}_2(\mathbf{X}) = \mathbf{V} + \mathbf{A}\mathbf{X}
+    \end{equation*}
+    for all $\mathbf{X}$. Then
+    \begin{equation*}
+        \mathbf{0} = \lim_{\mathbf{X} \to \mathbf{X}_0} \frac{\mathbf{G}_1(\mathbf{X}) - \mathbf{G}_2(\mathbf{X}_0)}{|\mathbf{X} - \mathbf{X}_0|} = \lim_{\mathbf{X} \to \mathbf{X}_0} \frac{\mathbf{A}(\mathbf{X} - \mathbf{X}_0)}{|\mathbf{X} - \mathbf{X}_0|}.
+    \end{equation*}
+    But if $\mathbf{A}$ is nonzero, then $\|\mathbf{A}\| > 0$, and there exists a unit vector $\mathbf{\hat{X}}$ such that $|\mathbf{A}\mathbf{\hat{X}}| = \|\mathbf{A}\|$.
+    If we let $\epsilon = \|\mathbf{A}\|$, then for any $\delta > 0$, we can let $0 < c < \delta$ and let $\mathbf{X} = \mathbf{X}_0 + c\mathbf{\hat{X}} \in B_\delta(\mathbf{X}_0)$. But then
+    \begin{equation*}
+        \left|\frac{\mathbf{A}(\mathbf{X} - \mathbf{X}_0)}{|\mathbf{X} - \mathbf{X}_0|}\right| = \frac{|c\mathbf{A}\mathbf{\hat{X}}|}{|c\mathbf{\hat{X}}|} = \frac{c\|\mathbf{A}\||\mathbf{\hat{X}}|}{c|\mathbf{\hat{X}}|} = \|\mathbf{A}\| = \epsilon.
+    \end{equation*}
+    Therefore, the limit cannot equal 0. This proves that $\mathbf{A} = \mathbf{0}$, so
+    \begin{equation*}
+        \mathbf{G}_1(\mathbf{X}) = \mathbf{G}_2(\mathbf{X}) = \mathbf{V}.
+    \end{equation*}
+}
+
 \end{itemize}
 
 \end{document}
